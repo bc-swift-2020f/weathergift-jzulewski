@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7125CE17254700EC00311DEA /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125CE16254700EC00311DEA /* DailyTableViewCell.swift */; };
 		713282652535FF6E000BE425 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713282642535FF6E000BE425 /* APIKeys.swift */; };
 		7132827225360EDC000BE425 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132827125360EDC000BE425 /* LocationDetailViewController.swift */; };
 		7132827725362335000BE425 /* PageViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132827625362335000BE425 /* PageViewControlller.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		0933ED428612305A111251E2 /* libPods-WeatherGift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherGift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C7EDFC90F9C535DA1BAA76B /* Pods-WeatherGift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherGift.debug.xcconfig"; path = "Target Support Files/Pods-WeatherGift/Pods-WeatherGift.debug.xcconfig"; sourceTree = "<group>"; };
+		7125CE16254700EC00311DEA /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
 		713282642535FF6E000BE425 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		7132827125360EDC000BE425 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		7132827625362335000BE425 /* PageViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewControlller.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				71DAC87825356AC9000ECABE /* Main.storyboard */,
 				71DAC8A525356AEE000ECABE /* WeatherLocation.swift */,
 				7132827B25363749000BE425 /* WeatherDetail.swift */,
+				7125CE16254700EC00311DEA /* DailyTableViewCell.swift */,
 				71DAC87B25356ACB000ECABE /* Assets.xcassets */,
 				71DAC87D25356ACB000ECABE /* LaunchScreen.storyboard */,
 				71DAC88025356ACB000ECABE /* Info.plist */,
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7125CE17254700EC00311DEA /* DailyTableViewCell.swift in Sources */,
 				71DAC87725356AC9000ECABE /* LocationListViewController.swift in Sources */,
 				7132827C25363749000BE425 /* WeatherDetail.swift in Sources */,
 				713282652535FF6E000BE425 /* APIKeys.swift in Sources */,

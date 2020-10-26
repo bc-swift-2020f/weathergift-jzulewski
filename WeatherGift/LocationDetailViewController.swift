@@ -10,7 +10,7 @@ import UIKit
 private let dateFormatter: DateFormatter = {
     print("Created a date formatter!")
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "EEEE, MMM d, h:mm aaa"
+    dateFormatter.dateFormat = "EEEE, MMM d"
     return dateFormatter
 }()
 
@@ -21,6 +21,7 @@ class LocationDetailViewController: UIViewController {
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var tableView: UITableView!
     
     var weatherDetail: WeatherDetail!
     var locationIndex = 0
@@ -29,11 +30,22 @@ class LocationDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clearUserInterface()
         
+        tableView.delegate = self
+        tableView.dataSource = self
         
         
         updateUserInterface()
         
+    }
+    
+    func clearUserInterface() {
+        dateLabel.text = ""
+        placeLabel.text = ""
+        temperatureLabel.text = ""
+        summaryLabel.text = ""
+        imageView.image = UIImage()
     }
     
     
@@ -58,6 +70,7 @@ class LocationDetailViewController: UIViewController {
                 self.temperatureLabel.text = "\(self.weatherDetail.temperature)°"
                 self.summaryLabel.text = self.weatherDetail.summary
                 self.imageView.image = UIImage(named: self.weatherDetail.dayIcon)
+                self.tableView.reloadData()
             }
             
         }
@@ -92,5 +105,22 @@ class LocationDetailViewController: UIViewController {
         
     }
     
+
+}
+
+extension LocationDetailViewController: UITableViewDelegate, UITableViewDataSource {
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return weatherDetail.dailyWeatherData.count
+}
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DailyTableViewCell
+    cell.dailyWeather = weatherDetail.dailyWeatherData[indexPath.row]
+    return cell
+}
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 
 }
