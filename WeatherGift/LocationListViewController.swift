@@ -92,6 +92,7 @@ extension LocationListViewController: UITableViewDataSource, UITableViewDelegate
     // MARK:- tableView methods to freeze the first cell
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return indexPath.row != 0 ? true : false
+        //adding comment to recommit
     }
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
