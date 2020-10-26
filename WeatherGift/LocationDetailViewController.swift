@@ -8,7 +8,6 @@
 import UIKit
 
 private let dateFormatter: DateFormatter = {
-    print("Created a date formatter!")
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "EEEE, MMM d"
     return dateFormatter
