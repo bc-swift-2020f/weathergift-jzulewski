@@ -10,6 +10,7 @@
 		7125CE17254700EC00311DEA /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125CE16254700EC00311DEA /* DailyTableViewCell.swift */; };
 		7125CE1C2547102B00311DEA /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125CE1B2547102B00311DEA /* HourlyCollectionViewCell.swift */; };
 		7125CE2125473EEC00311DEA /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125CE2025473EEC00311DEA /* UIViewController+alert.swift */; };
+		7125CE2925475EBF00311DEA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125CE2825475EBF00311DEA /* AboutViewController.swift */; };
 		713282652535FF6E000BE425 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713282642535FF6E000BE425 /* APIKeys.swift */; };
 		7132827225360EDC000BE425 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132827125360EDC000BE425 /* LocationDetailViewController.swift */; };
 		7132827725362335000BE425 /* PageViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132827625362335000BE425 /* PageViewControlller.swift */; };
@@ -49,6 +50,7 @@
 		7125CE16254700EC00311DEA /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
 		7125CE1B2547102B00311DEA /* HourlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		7125CE2025473EEC00311DEA /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		7125CE2825475EBF00311DEA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		713282642535FF6E000BE425 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		7132827125360EDC000BE425 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		7132827625362335000BE425 /* PageViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewControlller.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				71DAC87425356AC9000ECABE /* SceneDelegate.swift */,
 				71DAC87625356AC9000ECABE /* LocationListViewController.swift */,
 				7132827125360EDC000BE425 /* LocationDetailViewController.swift */,
+				7125CE2825475EBF00311DEA /* AboutViewController.swift */,
 				7132827625362335000BE425 /* PageViewControlller.swift */,
 				7125CE2025473EEC00311DEA /* UIViewController+alert.swift */,
 				71DAC87825356AC9000ECABE /* Main.storyboard */,
@@ -356,6 +359,7 @@
 				713282652535FF6E000BE425 /* APIKeys.swift in Sources */,
 				71DAC8A625356AEE000ECABE /* WeatherLocation.swift in Sources */,
 				7132827725362335000BE425 /* PageViewControlller.swift in Sources */,
+				7125CE2925475EBF00311DEA /* AboutViewController.swift in Sources */,
 				71DAC87325356AC9000ECABE /* AppDelegate.swift in Sources */,
 				7125CE2125473EEC00311DEA /* UIViewController+alert.swift in Sources */,
 				7132827225360EDC000BE425 /* LocationDetailViewController.swift in Sources */,
